@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="libs3">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../eureka-client-test/build/libs/PhotoAppApiUsers-0.0.1-SNAPSHOT-plain.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../eureka-client-test/build/libs/PhotoAppApiUsers-0.0.1-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

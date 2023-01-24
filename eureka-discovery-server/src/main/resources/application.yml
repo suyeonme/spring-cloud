@@ -6,8 +6,8 @@ server:
 
 eureka:
   client:
-    registerWithEureka: false
-    fetchRegistry: false
+    registerWithEureka: false #  eureka에 등록여부
+    fetchRegistry: false # registry의 항목을 로컬로 캐시할지 여부
     serviceUrl:
       defaultZone: http://localhost:8010/eureka
   server:

@@ -9,6 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
     @GetMapping("/status/check")
     static String status() {
-        return "working";
+        return "User Status working";
     }
 }

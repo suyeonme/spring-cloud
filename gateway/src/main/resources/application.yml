@@ -8,9 +8,17 @@ spring:
     allow-bean-definition-overriding: true
   cloud:
     gateway:
+      routes[0]:
+        id: users-status-check
+        uri: lb://eureka-client-user
+        predicates[0]: Path=eureka-client-user/users/status/check
+        predicates[1]: Method=GET
+        filters[0]: RemoveRequestHeader=Cookie
+#        filters[1]: RewritePath=/eureka-client-user/(?<segment>.*), /$\{segment}
       discovery:
         locator:
           enabled: true
+          lower-case-service-id: true
 
 eureka:
   client:

@@ -24,3 +24,6 @@ eureka:
   instance:
     hostname: localhost
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+
+gateway:
+  ip: 192.168.45.59
